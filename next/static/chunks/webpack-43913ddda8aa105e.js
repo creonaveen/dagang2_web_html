@@ -1,5 +1,5 @@
 !(function () {
-  'use strict';
+  "use strict";
   var e,
     t,
     n,
@@ -69,14 +69,14 @@
     (d.t = function (e, r) {
       if (
         (1 & r && (e = this(e)),
-        8 & r || ('object' == typeof e && e && ((4 & r && e.__esModule) || (16 & r && 'function' == typeof e.then))))
+        8 & r || ("object" == typeof e && e && ((4 & r && e.__esModule) || (16 & r && "function" == typeof e.then))))
       )
         return e;
       var o = Object.create(null);
       d.r(o);
       var u = {};
       t = t || [null, n({}), n([]), n(n)];
-      for (var i = 2 & r && e; 'object' == typeof i && !~t.indexOf(i); i = n(i))
+      for (var i = 2 & r && e; "object" == typeof i && !~t.indexOf(i); i = n(i))
         Object.getOwnPropertyNames(i).forEach(function (t) {
           u[t] = function () {
             return e[t];
@@ -107,26 +107,26 @@
       return Object.prototype.hasOwnProperty.call(e, t);
     }),
     (r = {}),
-    (o = '_N_E:'),
+    (o = "_N_E:"),
     (d.l = function (e, t, n, u) {
       if (r[e]) {
         r[e].push(t);
         return;
       }
       if (void 0 !== n)
-        for (var i, c, f = document.getElementsByTagName('script'), a = 0; a < f.length; a++) {
+        for (var i, c, f = document.getElementsByTagName("script"), a = 0; a < f.length; a++) {
           var l = f[a];
-          if (l.getAttribute('src') == e || l.getAttribute('data-webpack') == o + n) {
+          if (l.getAttribute("src") == e || l.getAttribute("data-webpack") == o + n) {
             i = l;
             break;
           }
         }
       i ||
         ((c = !0),
-        ((i = document.createElement('script')).charset = 'utf-8'),
+        ((i = document.createElement("script")).charset = "utf-8"),
         (i.timeout = 120),
-        d.nc && i.setAttribute('nonce', d.nc),
-        i.setAttribute('data-webpack', o + n),
+        d.nc && i.setAttribute("nonce", d.nc),
+        i.setAttribute("data-webpack", o + n),
         (i.src = d.tu(e))),
         (r[e] = [t]);
       var s = function (t, n) {
@@ -143,14 +143,14 @@
           )
             return t(n);
         },
-        p = setTimeout(s.bind(null, void 0, { type: 'timeout', target: i }), 12e4);
+        p = setTimeout(s.bind(null, void 0, { type: "timeout", target: i }), 12e4);
       (i.onerror = s.bind(null, i.onerror)), (i.onload = s.bind(null, i.onload)), c && document.head.appendChild(i);
     }),
     (d.r = function (e) {
-      'undefined' != typeof Symbol &&
+      "undefined" != typeof Symbol &&
         Symbol.toStringTag &&
-        Object.defineProperty(e, Symbol.toStringTag, { value: 'Module' }),
-        Object.defineProperty(e, '__esModule', { value: !0 });
+        Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }),
+        Object.defineProperty(e, "__esModule", { value: !0 });
     }),
     (d.tt = function () {
       return (
@@ -160,16 +160,16 @@
               return e;
             },
           }),
-          'undefined' != typeof trustedTypes &&
+          "undefined" != typeof trustedTypes &&
             trustedTypes.createPolicy &&
-            (u = trustedTypes.createPolicy('nextjs#bundler', u))),
+            (u = trustedTypes.createPolicy("nextjs#bundler", u))),
         u
       );
     }),
     (d.tu = function (e) {
       return d.tt().createScriptURL(e);
     }),
-    (d.p = '/dagang2_web_html/next/'),
+    (d.p = "/dagang2_web_html/next/"),
     (i = { 272: 0, 93: 0 }),
     (d.f.j = function (e, t) {
       var n = d.o(i, e) ? i[e] : void 0;
@@ -187,16 +187,16 @@
             o,
             function (t) {
               if (d.o(i, e) && (0 !== (n = i[e]) && (i[e] = void 0), n)) {
-                var r = t && ('load' === t.type ? 'missing' : t.type),
+                var r = t && ("load" === t.type ? "missing" : t.type),
                   o = t && t.target && t.target.src;
-                (u.message = 'Loading chunk ' + e + ' failed.\n(' + r + ': ' + o + ')'),
-                  (u.name = 'ChunkLoadError'),
+                (u.message = "Loading chunk " + e + " failed.\n(" + r + ": " + o + ")"),
+                  (u.name = "ChunkLoadError"),
                   (u.type = r),
                   (u.request = o),
                   n[1](u);
               }
             },
-            'chunk-' + e,
+            "chunk-" + e,
             e
           );
         }
